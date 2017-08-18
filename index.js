@@ -8,4 +8,14 @@ function destructivelyPrependKitten(name) {
   kittens.unshift(name);
   return kittens;
 }
-function 
+function destructivelyRemoveLastKitten() {
+  kittens.pop();
+  return kittens;
+}
+function destructivelyRemoveFirstKitten() {
+  kittens.shift();
+  return kittens;
+}
+function prependKitten(name) {
+  return [name, ...kittens];
+}
